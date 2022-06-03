@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+    <head> <!-- Start of Head -->
+
+        <meta charset="UTF-8"> <!-- Describe Metadata within an HTML document -->
+        <meta name="author" content="Miha Podobnik"> <!-- Describe Metadata within an HTML document -->
+        <meta name="description" content="HTML Basics page"> <!-- Describe Metadata within an HTML document -->
+        <title>Naslov strani</title>
+        <link rel="icon" href="images/html.png" type="image/x-icon"> <!-- Defines the relationship between the current document and an external resource -->
+        <link rel="stylesheet" href="main.css" type="text/css"> <!-- Defines the relationship between the current document and an external resource -->
+
+    </head> <!-- End of head -->
+
+    <body> <!-- Start of Body -->
+        <header>
+            <h1>My Goals for the Year</h1> <!-- Header 1 -->
+
+            <hr>
+
+            <nav aria-label="main-navigation"> <!-- Navigation Links -->
+                <h2 id="main-navigations">Main Navigation</h2>
+                <ul> <!-- Unordered List -->
+                    <li> <!-- Defines a List Item-->
+                        <a href="#html">Learn HTML</a> <!-- Refrence a link or a file -->
+                    </li> <!-- Defines a List Item-->
+                    <li> <!-- Defines a List Item--> 
+                        <a href="#vacation">Planning a Vacation</a> <!-- Refrence a link or a file -->
+                    </li> <!-- Defines a List Item-->
+                    <li> <!-- Defines a List Item-->
+                        <a href="about.html">About Me</a> <!-- Refrence a link or a file -->
+                    </li> <!-- Defines a List Item-->
+                    <li> <!-- Defines a List Item-->
+                        <a href="#contact">Contact Me</a> <!-- Refrence a link or a file -->
+                    </li> <!-- Defines a List Item-->
+                </ul> <!-- Unordered List -->
+            </nav> <!-- Navigation Links -->
+        </header>
+         
+        <hr> <!-- Horizontal Rule -->
+
+        <main>
+            <article id="html"> <!-- Section With HTML ID For Jumping To It On The Page --> <!-- Article has a clear topic, section is more generic -->
+                <h2>I'm ready to learn HTML</h2> <!-- Header 2 -->
+                <p>This is my first web page.</p> <!-- Paragraph -->
+
+                <section> <!-- Article has a clear topic, section is more generic -->
+                    <h3>HTML5</h3>
+                    <img src="images/html_logo_300x300.png" alt="HTML5 Logo" title="I am learning HMTL5" width="300" height="300"> <!-- Insert a Image -->
+                    <figure> <!-- Element to markup a photo -->
+                        <figcaption> <!-- Element to define a caption for the photo -->
+                            HTML5 code Example
+                        </figcaption> <!-- Element to define a caption for the photo -->
+                        <p> <!-- Paragraph -->
+                            <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code> <!-- Define text as code -->
+                        </p> <!-- Paragraph -->
+                    </figure> <!-- Element to markup a photo -->
+                </section> <!-- Article has a clear topic, section is more generic -->
+
+                <section> <!-- Article has a clear topic, section is more generic -->
+                    <h3>My Daily Schedule</h3> <!-- Header 3 -->
+                    <p>Let me tell you how:</p> <!-- Paragraph -->
+                    <ol> <!-- Ordered List -->
+                        <li> I learn more about web dev. </li> <!-- Defines a List Item-->
+                        <li> I plan out my schedule. </li> <!-- Defines a List Item-->
+                        <li> I use resources from <abbr title="Mozilla Developer Network">
+                            <a href="https://developer.mozilla.org/" target="_blank">MDN</a> <!-- Refrence a link or a file -->
+                        </abbr>  <!-- Abbreviation --> .</li> <!-- Defines a List Item-->
+                    </ol> <!-- Ordered List -->
+                    <aside>
+                        <details>
+                            <summary>Guess the <mark>number of hours</mark> I code per day.</summary>
+                            <p>I start at <time datetime="08:00">8 am</time> and I write for for <time datetime="PT3H">3 hours</time> every morning</p>
+                        </details>
+                    </aside>
+                    <br>
+                    <table>
+                        <caption>My Daily Schedule</caption>
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th scope="col"> <!-- table header -->Time</th>
+                                <th scope="col">Activity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr> <!-- table row -->
+                                <th scope="row">Morning</th>
+                                <td> <!-- table data -->
+                                    <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+                                </td>
+                                <td>Write Code</td>
+                            </tr>
+                            <tr> <!-- table row -->
+                                <th scope="row">Break</th>
+                                <td> <!-- table data -->
+                                    <time datetime="11:00">11am</time>-<time datetime="12:00">12am</time>
+                                </td>
+                                <td>Lunch</td>
+                            </tr>
+                            <tr> <!-- table row -->
+                                <th scope="row">Afternoon</th>
+                                <td> <!-- table data -->
+                                    <time datetime="12:00">12am</time>-<time datetime="17:00">5pm</time>
+                                </td>
+                                <td>Study for other courses</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2" scope="row">Evening/Night</th>
+                                <td rowspan="2">All Other Times</td>
+                                <td>Free Time</td>
+                            </tr>
+                            <tr>
+                                <td>Sleep</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">And that's what i do everyday, 5 days a week. Just eat, sleep, code ..and recharge!</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section> <!-- Article has a clear topic, section is more generic -->
+            </article> <!-- End of HTML Setion --> <!-- Article has a clear topic, section is more generic -->
+
+            <hr> <!-- Horizontal Rule -->
+
+            <article id="vacation"> <!-- Section With VACATION ID For Jumping To It On The Page --> <!-- Article has a clear topic, section is more generic -->
+                <h2>I Am Also Planning a Vacation</h2> <!-- Header 2 -->
+                <figure> <!-- Element to markup a photo -->
+                    <img src="images/vacation.jpg" alt="Vacation" title="Image of a beach" width="400" height="267" loading="lazy"> <!-- Insert a Image -->
+                    <figcaption> <!-- Element to define a caption for the photo -->
+                        Beach somewhere in the world
+                    </figcaption> <!-- Element to define a caption for the photo -->
+                </figure> <!-- Element to markup a photo -->
+                <p>I've been woring hard and <em>really need a getaway</em> <!-- Emphasized Text -->.
+                    <br>I live in Reka so I want to visit a beach.</p> <!-- Paragraph -->
+                
+                <section>
+                    <h3>Places I'd Like To Visit</h3> <!-- Header 3 -->
+                    <ul> <!-- Unordered List -->
+                    <li><p>I've heard good things about Pag.</p> <!-- Paragraph --> </li> <!-- Defines a listed item -->
+                    <li><p>I've heard good things about going here:</p> <!-- Paragraph -->
+                    <figure> <!-- Element to markup a photo -->
+                        <img src="images/simuni.jpg" alt="Caming Village Šimuni" title="Aqua park in Village Šimuni" width="342" height="256" loading="lazy"> <!-- Insert a Image -->
+                        <figcaption> <!-- Element to define a caption for the photo -->
+                            Village Šimuni
+                        </figcaption> <!-- Element to define a caption for the photo -->
+                    </figure> <!-- Element to markup a photo -->
+                    <address> <!-- Defines a contact information for the author/owner -->
+                        Camping Village Šimuni <br> <!-- Single line breaks in a text -->
+                        Island Pag <br> <!-- Single line breaks in a text -->
+                        Croatia
+                    </address> <!-- Defines a contact information for the authot/owner --> </li>
+                    </ul> <!-- Unordered List -->
+                </section>
+                <!-- TODO: Add more places -->
+                <section>
+                    <h3>Places I Want To Avoid</h3> <!-- Header 3 -->
+                    <dl> <!-- Defines a Description List -->
+                        <dt>North Pole</dt> <!-- Defines a term/name in a description list -->
+                        <dd>I hear this is <strong>cold</strong>!</dd> <!-- Used to describe a term/name in a description list -->
+
+                        <dt>South Pole</dt> <!-- Defines a term/name in a description list -->
+                        <dd>This is also <strong>cold</strong>!</dd> <!-- Used to describe a term/name in a description list -->
+
+                        <dt>Mountain Tops</dt> <!-- Defines a term/name in a description list -->
+                        <dd>These are also <strong>cold</strong>!</dd> <!-- Used to describe a term/name in a description list -->
+                    </dl> <!-- Defines a Description List -->
+                </section>
+            </article> <!-- End of VACATION Setion --> <!-- Article has a clear topic, section is more generic -->
+
+            <hr>
+
+            <article id="contact">
+                <h2>Contact Me</h2>
+                <p>If you have any questions about me, don't hesitate to send them to me.</p>
+
+                <form action="https://httpbin.org/get" method="get">
+                    <fieldset>
+                        <legend>Personal Info</legend>
+                        <p>
+                            <label for="firstName">First Name:</label>
+                            <input type="text" name="firstName" id="firstName" placeholder="Mike" autocomplete="on" required> <!--you can add autofocus so it instantly focuses here-->
+                        </p>
+                        <p>
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Crack" autocomplete="on" required>
+                        </p>
+                        <p>
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" id="password" placeholder="Password" required>
+                        </p>
+                        <p>
+                            <label for="phone">Phone:</label>
+                            <select name="phone" id="countryNumber">
+                                <option value="+386">+386</option>
+                                <option value="+321">+321</option>
+                            </select>
+                            <input type="tel" name="phone" id="phone" placeholder="51456321" pattern="[0-9]{2}[0-9]{3}[0-9]{3}" required>
+                        </p>
+                        <p>
+                            <label for="favNumber">Favorite Number:</label>
+                            <input type="number" name="favNumber" id="favNumber" min="0" max="9999999999999999999" step="1" value="0" required>
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="mikecrack@email.rand" autocomplete="on" required>
+                        </p>
+                        <p>
+                            <label for="coffee">Favorite Coffee:</label>
+                            <select name="coffee" id="coffee">
+                                <optgroup label="Coffees">
+                                    <option value="regular coffee">Regular Coffee</option>
+                                    <option value="iced coffee">Iced Coffee</option>
+                                    <option value="black coffee">Black Coffee</option>
+                                </optgroup>
+                                <optgroup label="Espresso Drinks">
+                                    <option value="cappuccino" selected>Cappucino</option>
+                                    <option value="cortado">Cortado</option>
+                                    <option value="americano">Americano</option>
+                                </optgroup>
+                                <optgroup label="Other">
+                                    <option value="other">Other</option>
+                                    <option value="nocoffee">I Dont Drink Coffee</option>
+                                </optgroup>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="coffee">Favorite Coffee</label>
+                            <input type="text" name="coffee" id="coffee1" list="coffee-list">
+                            <datalist id="coffee-list">
+                                <option value="coffee">
+                                <option value="latte">
+                                <option value="espresso">
+                                <option value="cortado">
+                                <option value="americano">
+                                <option value="other">
+                            </datalist>
+                        </p>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>What is your favorite food?</legend>
+                        <p>
+                            <input type="radio" name="food" id="tacos" value="tacos">
+                            <label for="tacos">Tacos</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="food" id="pizza" value="pizza">
+                            <label for="pizza">Pizza</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="food" id="otherFood" value="otherFood">
+                            <label for="otherFood">Other</label>
+                        </p>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Do you have pets?</legend>
+                        <p>
+                            <input type="checkbox" name="pets" id="dog" value="dog">
+                            <label for="dog">Dog</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="pets" id="cat" value="cat">
+                            <label for="cat">Cat</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="pets" id="fish" value="fish">
+                            <label for="fish">Fish</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="pets" id="otherPet" value="otherPet">
+                            <label for="otherPet">Other</label>
+                            <input type="text" name="pets" id="other" placeholder="Frog">
+                        </p>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Send me a note</legend>
+                        <label for="message">Your Message</label>
+                        <br>
+                        <textarea name="message" id="message" cols="100" rows="10" placeholder="Type your message here:"></textarea>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Submit</button> <!-- dont send sensitive information with /git link!!!! -->
+                    <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </article>
+        </main>
+
+        <hr> <!-- Horizontal Rule -->
+
+        <footer>
+            <p>
+                &lt;&lt;&lt; &copy; Miha Podobnik &gt;&gt;&gt;
+            </p>
+            <p> <!-- Paragraph -->
+                <a href="#">Back to Top</a> <!-- Refrence a link or a file -->
+            </p> <!-- Paragraph -->
+        </footer>
+
+    </body> <!-- End of Body -->
+
+</html>
