@@ -1,0 +1,102 @@
+/*                                         SELECTORS                                              */
+/* Element selectors h1, p, a, ..... just name the element in css*/
+/* ckass sekector same as above you just need to add class="classname". And in css .classname */
+/* ID selector same as aboje you just add the id="sometext" and in css #sometext. Also id should be used only once*/
+/* INLINE STYLING WITH STYLE IN THE HTML CODE OVERRIDES ALL CHANGES HERE */
+
+/* Class selectors
+.title {
+  color: red;
+}
+
+.subtitle {
+  color: blue;
+}
+
+ID
+#contact-us {
+  color: green;
+} */
+
+/* h2:hover {
+  color: red;
+} */
+
+/* h2[class="subtitle"] {
+  color: blue;
+} */
+
+/* #services {
+  color: green;
+} */
+
+/* li:first-child {
+  color: steelblue;
+} */
+
+/* td:only-child {
+  color: steelblue;
+} */
+
+/* li:only-child {
+  color: purple;
+} */
+
+/* #google-link:link {
+  color: blue;
+} */
+
+/* #google-link:visited {
+  color: red;
+}
+
+#google-link:hover {
+  color: cyan;
+} */
+
+/* Looks for elements that directly follow one after another */
+/* h2 + a {
+  color: steelblue;
+} */
+
+/* same as above they just need to share the same parent */
+/* textarea ~ button {
+  color: purple;
+} */
+
+/* Selecting direct children*/
+/* ul > li {
+  color: blue;
+} */
+
+/* decendant selector - if its inside [ul] theme [li] */
+/* ul li {
+  color: green;
+} */
+
+/*                                      ATTRIBUTE SELECTORS                                     */
+
+/* every image that source attribute starts with */
+/* img[src^="../img/"] {
+} */
+
+/* every image that source attribute ends with */
+/* img[src$="../img/"] {
+} */
+
+/* if it contains it */
+/* img[src*="../img/"] {
+} */
+
+/* white space attribute selector - you can add more classes*/
+/* h2[class~="article-subtitle"] {
+  background: green;
+} */
+
+/* find every h2 where the class is either eaqual to directly article-subtitle or article-subtitle-*/
+/* article-subtitle-1233 or article-subtitle-3211 */
+/* h2[class|="article-subtitle"] {
+  background: green;
+} */
+
+/*                Coloring text                */
