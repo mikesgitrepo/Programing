@@ -1,6 +1,10 @@
 body {
   /* background: #c5c6c7; */
-  background: rgba(197, 198, 199, 1);
+  background: linear-gradient(
+    to bottom,
+    rgba(197, 198, 199, 1),
+    rgba(197, 198, 199, 0.3)
+  );
 }
 /* body {
   background: url("https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2021/03/landscape-photography-tips-4.jpg?fit=1500%2C908&ssl=1");
@@ -19,9 +23,11 @@ body {
   height: 400px;
   width: 70%;
 
-  background: url("../img/img-2.jpg");
-  /* background-size: contain; */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: steelblue;
+  /* background: linear-gradient(
+    160deg,
+    rgb(149, 237, 171),
+    rgba(149, 237, 171, 0.1)
+  ); */
+  background: radial-gradient(circle, red 20%, blue 40%, green 55%);
+  /* background-size: cover; doesnt work for radial gradients */
 }
