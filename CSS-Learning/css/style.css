@@ -22,7 +22,7 @@ h2:hover {
   color: red;
 }
 
-.subtitle {
+h2[class="subtitle"] {
   color: blue;
 }
 
@@ -73,3 +73,28 @@ ul > li {
 /* ul li {
   color: green;
 } */
+
+/*                                      ATTRIBUTE SELECTORS                                     */
+
+/* every image that source attribute starts with */
+img[src^="../img/"] {
+}
+
+/* every image that source attribute ends with */
+/* img[src$="../img/"] {
+} */
+
+/* if it contains it */
+/* img[src*="../img/"] {
+} */
+
+/* white space attribute selector - you can add more classes*/
+h2[class~="article-subtitle"] {
+  background: green;
+}
+
+/* find every h2 where the class is either eaqual to directly article-subtitle or article-subtitle-*/
+/* article-subtitle-1233 or article-subtitle-3211 */
+h2[class|="article-subtitle"] {
+  background: green;
+}
