@@ -1,6 +1,9 @@
 body {
-  background: #c5c6c7;
+  background: url("../img/img-1.jpg");
 }
+/* body {
+  background: url("https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2021/03/landscape-photography-tips-4.jpg?fit=1500%2C908&ssl=1");
+} */
 
 #title {
   /* color: #9679a1; */
