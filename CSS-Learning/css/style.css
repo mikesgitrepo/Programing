@@ -5,6 +5,8 @@ body {
     rgba(197, 198, 199, 1),
     rgba(197, 198, 199, 0.3)
   );
+  /* text-transform: capitalize; */
+  text-align: ;
 }
 /* body {
   background: url("https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2021/03/landscape-photography-tips-4.jpg?fit=1500%2C908&ssl=1");
@@ -30,6 +32,23 @@ body {
   ); */
   background: radial-gradient(circle, purple 20%, blue 40%, steelblue 55%);
   /* background-size: cover; doesnt work for radial gradients */
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
+}
+
+.link:visited {
+  color: purple;
+}
+
+.link:hover {
+  color: rgba(128, 0, 128, 0.634);
+}
+
+.image1:hover {
+  color: rgba(245, 245, 245, 0.175);
 }
 
 /*          DIFFERENT UNITS           */
