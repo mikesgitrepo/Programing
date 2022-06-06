@@ -21,13 +21,35 @@ body {
 
 #service-image {
   height: 400px;
-  width: 70%;
+  width: 70vw;
 
   /* background: linear-gradient(
     160deg,
     rgb(149, 237, 171),
     rgba(149, 237, 171, 0.1)
   ); */
-  background: radial-gradient(circle, red 20%, blue 40%, green 55%);
+  background: radial-gradient(circle, purple 20%, blue 40%, steelblue 55%);
   /* background-size: cover; doesnt work for radial gradients */
 }
+
+/*          DIFFERENT UNITS           */
+
+/*                     ABSOLUTE UNITS                      */
+/* [cm]	centimeters */
+/* [mm] millimeters*/
+/* [in] inches (1in = 96px = 2.54cm)*/
+/* [px *]	pixels (1px = 1/96th of 1in) */
+/* [pt]	points (1pt = 1/72 of 1in) */
+/* [pc]	picas (1pc = 12 pt) */
+
+/*                       RELATIVE UNITS                    */
+/*              Used for different screen sizes             */
+/* [percentages] [shift + 5] -	Relative to the parent element */
+/* [vmax]	- Relative to 1% of viewport's* larger dimension */
+/* [vmin]	- Relative to 1% of viewport's* smaller dimension */
+/* [vh]	- Relative to 1% of the height of the viewport* */
+/* [vw]	- Relative to 1% of the width of the viewport* */
+/* [rem] -	Relative to font-size of the root element */
+/* [ch]	- Relative to the width of the "0" (zero) */
+/* [ex] -	Relative to the x-height of the current font (rarely used) */
+/* [em]	- Relative to the font-size of the element (2em means 2 times the size of the current font) */
