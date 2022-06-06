@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <title>Document</title>
+  </head>
+  <body class="contactmestyle">
+    <header>
+      <h1 id="contactme">Contact Me</h1>
+      <hr />
+    </header>
+
+    <main>
+      <form action="https://httpbin.org/get" method="get">
+        <p>
+          <label for="fullName">Your name:</label><br />
+          <input
+            type="text"
+            name="fullName"
+            id="fullName"
+            placeholder="John Smith"
+            autocomplete="on"
+            required
+          />
+        </p>
+        <p>
+          <label for="email">Your email:</label><br />
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="johnsmith@email.com"
+            autocomplete="on"
+          />
+        </p>
+        <label for="message">Your Message:</label>
+        <br />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Type your message here:"
+          required
+        ></textarea>
+        <button type="submit" class="submit">Send</button>
+        <button type="reset" class="reset">Reset</button>
+      </form>
+      <hr />
+    </main>
+    <footer>
+      <a href="../html/index.html">
+        <img src="../img/contactme.png" alt="Contact Me" class="contactme" />
+      </a>
+    </footer>
+  </body>
+</html>
