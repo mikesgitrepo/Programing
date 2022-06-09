@@ -73,3 +73,13 @@ body {
 /* [ch]	- Relative to the width of the "0" (zero) */
 /* [ex] -	Relative to the x-height of the current font (rarely used) */
 /* [em]	- Relative to the font-size of the element (2em means 2 times the size of the current font) */
+
+.okvir {
+  padding: 30px;
+  background: #ccc;
+}
+
+.okvir p:last-child {
+  padding: 30px 30px;
+  background: red;
+}

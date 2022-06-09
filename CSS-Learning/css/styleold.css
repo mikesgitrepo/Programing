@@ -30,17 +30,17 @@ ID
   color: green;
 } */
 
-/* li:first-child {
+li:first-child {
   color: steelblue;
-} */
+}
 
-/* td:only-child {
+td:only-child {
   color: steelblue;
-} */
+}
 
-/* li:only-child {
+li:only-child {
   color: purple;
-} */
+}
 
 /* #google-link:link {
   color: blue;
